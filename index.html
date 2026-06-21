@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="form-wrapper">
+  
+  <div class="form-slider">
+
+    <!-- SIGNUP -->
+    <form id="signupForm" class="form">
+      <h2>Create Account</h2>
+
+      <input type="text" id="signupUsername" placeholder="Username" />
+      <input type="email" id="signupEmail" placeholder="Email" />
+      <input type="password" id="signupPassword" placeholder="Enter Password" />
+      <input type="password" id="signupConfirm" placeholder="Confirm Password" />
+
+      <button type="submit" class="login-btn">Sign Up</button>
+
+      <p class="switch">
+        Already have an account?
+        <span id="toLogin">Login</span>
+      </p>
+
+      <p class="error" id="signupError"></p>
+    </form>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="form">
+      <h2>Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+
+      <p class="forgot">
+        <span id="forgotPassword">Forgot Password?</span>
+      </p>
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <p class="switch">
+        Don't have an account?
+        <span id="toSignup">Sign Up</span>
+      </p>
+
+      <p class="error" id="loginError"></p>
+    </form>
+
+    <!-- RESET PASSWORD -->
+    <form id="resetForm" class="form">
+      <h2>Reset Password</h2>
+
+      <input type="email" id="resetEmail" placeholder="Enter your email" />
+
+      <button type="submit" class="login-btn">
+        Send Reset Link
+      </button>
+
+      <p class="switch">
+        <span id="backToLogin">Back to Login</span>
+      </p>
+
+      <p class="error" id="resetError"></p>
+    </form>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
